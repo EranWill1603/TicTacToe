@@ -8,7 +8,7 @@
 
     <!-- strings for PlayerSetUp class -->
 
-    <string name="PlayerSetupTitle">Enter Your Name</string>
+    <string name="PlayerSetupTitle">Enter Your Names</string>
     <string name="Lable1">Player 1</string>
     <string name="Lable2">Player 2</string>
     <string name="SubmitButton">Submit Names</string>

@@ -16,7 +16,7 @@ class GameLogic {
     private int player = 1;
 
     //1st element --> row, 2nd element --> col, 3rd element --> line type
-    private int[] winType = {-1,-1,-1};
+    private int[] winType = new int [3];
 
 
     GameLogic(){
@@ -114,7 +114,7 @@ class GameLogic {
             playAgainBTN.setVisibility(View.VISIBLE);
             homeBTN.setVisibility(View.VISIBLE);
             playerTurn.setText(("Tie Game!"));
-            return true;
+            return false;
         }
         else{
             return false;
