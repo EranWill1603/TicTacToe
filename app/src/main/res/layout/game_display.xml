@@ -5,7 +5,7 @@
     xmlns:custum="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#607D8B"
+    android:background="#37474F"
     tools:context=".GameDisplay">
 
     <TextView
@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
-        android:textSize="24sp"
+        android:textSize="38sp"
         android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -36,7 +36,8 @@
             android:background="@drawable/green_button"
             android:onClick="playAgainButtonClick"
             android:text="@string/playAgainButton"
-            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:textSize="22sp"
             android:textStyle="bold|italic"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -50,7 +51,8 @@
             android:background="@drawable/blue_button"
             android:onClick="homeButtonClick"
             android:text="@string/homeButton"
-            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:textSize="22sp"
             android:textStyle="bold|italic"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -67,7 +69,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         custum:boardColor="#000000"
-        custum:XColor="#0000FF"
+        custum:XColor="#304FFE"
         custum:OColor="#FF0000"
         custum:winningLineColor = "#00FF00"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

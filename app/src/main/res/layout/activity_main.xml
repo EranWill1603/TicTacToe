@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#607D8B"
+    android:background="#37474F"
     tools:context=".MainActivity">
 
     <TextView
@@ -13,8 +13,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="180dp"
         android:text="@string/homeTitle"
-        android:textColor="#263238"
-        android:textSize="34sp"
+        android:textColor="#0091EA"
+        android:textSize="48sp"
         android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -24,13 +24,15 @@
 
     <Button
         android:id="@+id/playButton"
-        android:layout_width="108dp"
+        android:layout_width="120dp"
         android:layout_height="67dp"
         android:layout_marginTop="156dp"
         android:background="@drawable/green_button"
         android:onClick="playButtonClick"
         android:text="@string/playButton"
-        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:textSize="26sp"
+        android:textStyle="bold|italic"
         app:iconTint="#0E1123"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

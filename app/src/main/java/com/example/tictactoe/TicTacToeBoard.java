@@ -150,26 +150,26 @@ public class TicTacToeBoard extends View {
     private void drawX(Canvas canvas,int row,int col){
         paint.setColor(XColor);
     // create each diagonal line
-        canvas.drawLine((float) ((col+1)*cellSize-cellSize*0.1),
-                (float)(row*cellSize+cellSize*0.1),
-                (float)(col*cellSize+cellSize*0.1),
-                (float)((row+1)*cellSize-cellSize*0.1),
+        canvas.drawLine((float) ((col+1)*cellSize-cellSize*0.2),
+                (float)(row*cellSize+cellSize*0.2),
+                (float)(col*cellSize+cellSize*0.2),
+                (float)((row+1)*cellSize-cellSize*0.2),
                 paint);
 
-        canvas.drawLine((float)(col*cellSize+cellSize*0.1),
-                (float)(row*cellSize+cellSize*0.1),
-                (float)((col+1)*cellSize-cellSize*0.1),
-                (float)((row+1)*cellSize-cellSize*0.1),
+        canvas.drawLine((float)(col*cellSize+cellSize*0.2),
+                (float)(row*cellSize+cellSize*0.2),
+                (float)((col+1)*cellSize-cellSize*0.2),
+                (float)((row+1)*cellSize-cellSize*0.2),
                 paint);
     }
 
     private void drawO(Canvas canvas,int row,int col){
         paint.setColor(OColor);
 
-        canvas.drawOval((float)(col*cellSize+cellSize*0.1),
-                (float)(row*cellSize+cellSize*0.1),
-                (float)((col*cellSize+cellSize)-cellSize*0.1),
-                (float)((row*cellSize+cellSize)-cellSize*0.1),
+        canvas.drawOval((float)(col*cellSize+cellSize*0.2),
+                (float)(row*cellSize+cellSize*0.2),
+                (float)((col*cellSize+cellSize)-cellSize*0.2),
+                (float)((row*cellSize+cellSize)-cellSize*0.2),
                 paint);
     }
 
