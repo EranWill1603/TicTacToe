@@ -20,18 +20,19 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="281dp"
+        android:layout_height="51dp"
+        android:fontFamily="@font/akaya_telivigala"
         android:text="@string/PlayerSetupTitle"
         android:textColor="#F0F4C3"
-        android:textSize="36sp"
+        android:textSize="34sp"
         android:textStyle="bold|italic"
+        android:typeface="normal"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.541"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.158" />
+        app:layout_constraintVertical_bias="0.164" />
 
     <TextView
         android:id="@+id/textView2"
@@ -67,6 +68,7 @@
         android:minHeight="48dp"
         android:textSize="24sp"
         android:textStyle="bold|italic"
+        android:textColor="#F0F4C3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
@@ -85,6 +87,7 @@
         android:inputType="textCapSentences"
         android:minHeight="48dp"
         android:textSize="24sp"
+        android:textColor="#F0F4C3"
         android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"

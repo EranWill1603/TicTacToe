@@ -8,6 +8,17 @@
     android:background="#37474F"
     tools:context=".GameDisplay">
 
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:background="@drawable/background_screen"
+        app:srcCompat="@drawable/background_screen"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
     <TextView
         android:id="@+id/player_display"
         android:layout_width="wrap_content"
@@ -15,6 +26,7 @@
         android:layout_marginTop="64dp"
         android:textSize="38sp"
         android:textStyle="bold|italic"
+        android:textColor="#F0F4C3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -62,14 +74,14 @@
 
     <com.example.tictactoe.TicTacToeBoard
         android:id="@+id/ticTacToeBoard"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="400dp"
+        android:layout_height="385dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        custum:boardColor="#000000"
-        custum:XColor="#304FFE"
-        custum:OColor="#FF0000"
-        custum:winningLineColor = "#00FF00"/>
+        custum:OColor="#00C853"
+        custum:XColor="#0091EA"
+        custum:boardColor="#E0F2F1"
+        custum:winningLineColor="#FF0000" />
 </androidx.constraintlayout.widget.ConstraintLayout>
