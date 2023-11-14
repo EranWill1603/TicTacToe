@@ -1,6 +1,7 @@
 package com.example.tictactoe;
 
 import android.annotation.SuppressLint;
+import android.graphics.Color;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -36,9 +37,17 @@ class GameLogic {
 
             if(player==1){
                 playerTurn.setText((playerNames[1]+"'s Turn"));
+
+                // Set the background color programmatically
+
+                int newColor = Color.parseColor("#00C853"); // Replace with your desired color code
+                playerTurn.setTextColor(newColor);
             }
             else{
                 playerTurn.setText((playerNames[0]+"'s Turn"));
+
+                int newColor = Color.parseColor("#0091EA"); // Replace with your desired color code
+                playerTurn.setTextColor(newColor);
             }
 
             return true;
@@ -60,17 +69,22 @@ class GameLogic {
         playAgainBTN.setVisibility(View.GONE);
         homeBTN.setVisibility(View.GONE);
         playerTurn.setText(playerNames[0]+"'s Turn");
+        int newColor = Color.parseColor("#0091EA"); // Replace with your desired color code
+        playerTurn.setTextColor(newColor);
     }
 
 
     public boolean winnerCheck(){
         boolean isWinner = false;
 
+        int newColor;// Replace with your desired color code
+
         // Horizontal check (winType==1)
         for(int r=0; r<3;r++){
             if(gameBoard[r][0] == gameBoard[r][1] && gameBoard[r][0] == gameBoard[r][2] && gameBoard[r][0] != 0){
                 winType = new int[] {r,0,1};
                 isWinner = true;
+
             }
         }
         // Vertical check (winType==2)
@@ -108,12 +122,23 @@ class GameLogic {
             playAgainBTN.setVisibility(View.VISIBLE);
             homeBTN.setVisibility(View.VISIBLE);
             playerTurn.setText((playerNames[player-1]+"'s Won!"));
+
+            if (player == 1) {
+                newColor = Color.parseColor("#0091EA");
+            }
+            else {
+                newColor = Color.parseColor("#00C853");
+            }
+            playerTurn.setTextColor(newColor);
+
             return true;
         }
         else if (boardFilled==9) {
             playAgainBTN.setVisibility(View.VISIBLE);
             homeBTN.setVisibility(View.VISIBLE);
             playerTurn.setText(("Tie Game!"));
+            newColor = Color.parseColor("#FF0000");
+            playerTurn.setTextColor(newColor);
             return false;
         }
         else{
